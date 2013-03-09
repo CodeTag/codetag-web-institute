@@ -34,6 +34,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/*.html',
                     '{.tmp,<%= yeoman.app %>}/styles/*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/*.js',
+                    '{.tmp,<%= yeoman.app %>}/fonts/*.{eot,woff,ttf,svg}',
                     '<%= yeoman.app %>/images/*.{png,jpg,jpeg,webp}'
                 ],
                 tasks: ['livereload']
@@ -123,21 +124,26 @@ module.exports = function (grunt) {
             }
         },
         less: {
+            options: {
+                syncImport: true
+            },
             dist: {
                 options: {
-                    paths: ["app/components"],
-                    yuicompress: true
+                    paths: ['app/components'],
+                    yuicompress: true,
+                    syncImport: true
                 },
                 files: {
-                    ".tmp/styles/main.css": "<%= yeoman.app %>/styles/main.less"
+                    '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.less'
                 }
             },
             server: {
                 options: {
-                    paths: ["app/components"]
+                    paths: ['app/components'],
+                    syncImport: true
                 },
                 files: {
-                    ".tmp/styles/main.css": "<%= yeoman.app %>/styles/main.less"
+                    '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.less',
                 }
             }
         },

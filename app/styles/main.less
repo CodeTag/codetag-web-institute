@@ -1,6 +1,40 @@
 @import 'bootstrap/less/bootstrap';
 
+@import '../styles/fonts';
+@import '../styles/variables';
+
 .hero-unit {
     margin: 50px auto 0 auto;
     width: 300px;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    height: 60px;
+    line-height: 90px;
+    font-family: 'Conv_ProximaNova-Regular';
+    width: 100%;
+}
+
+.logo {
+    background: url('http://codetag.me/static/img/home/codetag-beta.png?3579437a5eda') 0 0 no-repeat;
+    height: 47px;
+    width: 200px;
+    color: transparent;
+    float: left;
+    padding: 2px 60px;
+}
+
+nav {
+    ul {
+        li {
+            padding: 10px 20px;
+            font-size: 18pt;
+            border-left: 1px solid gray;
+        }
+        li:first-child {
+            border: none;
+        }
+    }
 }
