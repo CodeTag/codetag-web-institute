@@ -124,14 +124,10 @@ module.exports = function (grunt) {
             }
         },
         less: {
-            options: {
-                syncImport: true
-            },
             dist: {
                 options: {
                     paths: ['app/components'],
-                    yuicompress: true,
-                    syncImport: true
+                    yuicompress: true
                 },
                 files: {
                     '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.less'
@@ -139,8 +135,7 @@ module.exports = function (grunt) {
             },
             server: {
                 options: {
-                    paths: ['app/components'],
-                    syncImport: true
+                    paths: ['app/components']
                 },
                 files: {
                     '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.less',
