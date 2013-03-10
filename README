@@ -1,0 +1,24 @@
+
+This is a yeoman project using the lessapp generator 
+
+## Dependencies
+
+have yeoman grunt and bower installed 
+
+> npm install -g yo grunt-cli bower
+
+## Install
+
+install node modules and app components
+
+> npm install && bower install
+
+## Commands
+
+To run the test application:
+
+> grunt server
+
+To create the actual page
+
+> grunt build
