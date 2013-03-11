@@ -22,3 +22,7 @@ To run the test application:
 To create the actual page
 
 > grunt buildm
+
+To deploy the actual page
+
+> git subtree push --prefix dist origin gh-pages
