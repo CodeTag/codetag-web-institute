@@ -3,9 +3,9 @@
 @import '../styles/fonts';
 @import '../styles/variables';
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
+
+body {
+    font-family: @regular;
 }
 
 header {
@@ -13,8 +13,30 @@ header {
     padding: 20px;
     height: 60px;
     line-height: 90px;
-    font-family: 'Conv_ProximaNova-Regular';
     width: 100%;
+}
+
+nav {
+    ul {
+        li {
+            padding: 10px 20px;
+            font-size: 18pt;
+            border-left: 1px solid @gray;
+            color: @gray;
+            b {
+                font-family: @bold;
+                color: @darkgray;
+            }
+        }
+        li:first-child {
+            border: none;
+        }
+    }
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
 }
 
 .logo {
@@ -26,15 +48,34 @@ header {
     padding: 2px 60px;
 }
 
-nav {
-    ul {
-        li {
-            padding: 10px 20px;
-            font-size: 18pt;
-            border-left: 1px solid gray;
-        }
-        li:first-child {
-            border: none;
-        }
+.big-header-image {
+    height: 501px;
+    background: url('../images/main-image.jpg') 0 0 no-repeat;
+    padding-top: 190px;
+    text-align: center;
+    display: block;
+    margin: 0px 18px auto;
+    letter-spacing: 1px;
+
+    h1 {
+        font-family: 'Conv_ProximaNova-Extrabold';
+        line-height: 0.9;
+        font-size: 72px;
+        color: @white;
     }
+
+    .btn {
+        margin-top: 100px;
+    }
+}
+
+.btn-large {
+    font-family: @bold;
+    padding: 18px 19px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.btn-success {
+  .buttonBackground(@btnSuccessBootcampHighlight, @btnSuccessBootcampHighlight);
 }
