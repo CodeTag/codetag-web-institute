@@ -10,8 +10,8 @@ body {
 
 header {
     position: relative;
-    padding: 20px;
-    height: 60px;
+    padding: 20px 5px;
+    height: 50px;
     line-height: 90px;
     width: 100%;
 }
@@ -20,7 +20,7 @@ nav {
     ul {
         li {
             padding: 10px 20px;
-            font-size: 18pt;
+            font-size: @small;
             border-left: 1px solid @gray;
             color: @gray;
             b {
@@ -34,22 +34,20 @@ nav {
     }
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-}
 
 .logo {
-    background: url('../images/codetag-logo-gris.png') 0 0 no-repeat;
-    height: 47px;
-    width: 200px;
-    color: transparent;
-    float: left;
-    padding: 2px 60px;
+    a {
+        background: url('../images/codetag-logo-gris.png') 0 0 no-repeat;
+        height: 47px;
+        width: 200px;
+        color: transparent;
+        float: left;
+        padding: 2px 60px;
+    }
 }
 
 .big-header-image {
-    height: 501px;
+    height: 365px;
     background: url('../images/main-image.jpg') 0 0 no-repeat;
     padding-top: 190px;
     text-align: center;
@@ -60,7 +58,7 @@ nav {
     h1 {
         font-family: 'Conv_ProximaNova-Extrabold';
         line-height: 0.9;
-        font-size: 72px;
+        font-size: @huge;
         color: @white;
     }
 
@@ -72,10 +70,57 @@ nav {
 .btn-large {
     font-family: @bold;
     padding: 18px 19px;
-    font-size: 24px;
+    font-size: @medium;
     letter-spacing: 1px;
 }
 
 .btn-success {
   .buttonBackground(@btnSuccessBootcampHighlight, @btnSuccessBootcampHighlight);
+}
+
+.more-info {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    h1 {
+        color: @action-blue;
+        font-family: @bold;
+        font-size: @huge;
+        width: 210px;
+        margin-left: 80px;
+        line-height: 0.8;
+        text-align: right;
+        float: left;
+    }
+    p {
+        color: @gray;
+        font-family: @regular;
+        font-size: @small;
+        text-align: left;
+        float: right;
+        padding: 25px;
+        width: 540px;
+    }
+}
+
+.program {
+    margin: 0 auto;
+    text-align: center;
+    background-color: @action-blue;
+    color: @white;
+    padding: 50px 0px;
+    h2 {
+        font-family: @bold;
+        font-size: @medium;
+        line-height: 0.8;
+    }
+    .program-element {
+        font-family: @regular;
+        font-size: @small;
+        text-align: left;
+        h4 {
+            font-family: @light;
+            font-size: @small;
+        }
+    }
 }
