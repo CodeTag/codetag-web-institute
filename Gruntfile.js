@@ -230,6 +230,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,txt}',
                         'fonts/**',
+                        'CNAME',
                         '.htaccess'
                     ]
                 }]
