@@ -33,7 +33,15 @@ nav {
         }
     }
 }
-
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav-container {
+    width: 940px;
+}
 
 .logo {
     a {
@@ -48,15 +56,23 @@ nav {
 
 .big-header-image {
     height: 365px;
-    background: url('../images/main-image.jpg') 0 0 no-repeat;
+    background: url('../images/main-image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding-top: 190px;
     text-align: center;
     display: block;
-    margin: 0px 18px auto;
+    margin: 0 auto;
     letter-spacing: 1px;
 
     h1 {
+        text-align: center;
+        margin: 0 auto;
+        width: 940px;
         font-family: 'Conv_ProximaNova-Extrabold';
+        padding: 10px;
         line-height: 0.9;
         font-size: @huge;
         color: @white;
@@ -109,6 +125,10 @@ nav {
     background-color: @action-blue;
     color: @white;
     padding: 30px 0px;
+    .program-content{
+        width: 940px;
+        margin: 0 auto;
+    }
     h2 {
         padding: 20px 0px;
         font-family: @bold;
@@ -135,6 +155,7 @@ nav {
     text-align: center;
     color: @gray;
     padding: 30px 0px;
+    width: 940px;
     h2 {
         padding: 20px 0px;
         font-family: @bold;
@@ -147,6 +168,13 @@ nav {
     }
     .logos {
         padding: 20px 0px;
+    }
+    .thumbnails {
+        display: table;
+        li {
+            display: inline;
+            width: 90px;
+        }
     }
 }
 .bootcamps {
@@ -165,9 +193,6 @@ nav {
     img {
         position: relative;
         top: 50px;
-    }
-    .thumbnails {
-
     }
     .thumbnail {
         border-radius: 20px;
