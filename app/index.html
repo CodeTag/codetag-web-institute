@@ -118,7 +118,7 @@
                                 <H4>APRIL 1ST - JUNE 30TH</H4>
                                 <p>Become a Django web developer in 12 weeks, get a portfolio done, and get introduced to companies looking for these skills</p>
                                 <p>
-                                    <a href="#" class="btn btn-large btn-success">APPLY</a>
+                                    <a href="#apply-modal" role="button" data-toggle="modal" class="btn btn-large btn-success">APPLY</a>
                                 </p>
                             </div>
                         </div>
@@ -127,6 +127,28 @@
             </div>
             <div class="footer"><a href="http://codetag.me">Codetag</a> 2013</div>
         </div>
+        <!-- Start Apply Modal -->
+        <div id="apply-modal" class="modal hide fade" tabindex="-1" role="dialog">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h3>APPLY TO THIS BOOTCAMP</h3>
+            </div>
+            <form action="https://docs.google.com/forms/d/1riBBJLLQ48psfKxeaTYo0jJTAlx9Ls2r0xLnZQcpyKs/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="apply-form">
+                <fieldset>
+                    <div class="modal-body">
+                        <input type="text" name="entry.821476572" id="entry_821476572" placeholder="Your full name">
+                        <input type="email"name="entry.948372883" id="entry_948372883"  placeholder="Your email">
+                        <input type="text" name="entry.1960038418" id="entry_1960038418" placeholder="Your phone number">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Apply</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <iframe name="hidden_iframe" id="hidden_iframe"></iframe>
+        <!-- End Apply Modal -->
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
