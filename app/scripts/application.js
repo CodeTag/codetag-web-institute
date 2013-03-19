@@ -8,15 +8,18 @@ $('#apply-form').on('submit', function(){
 
 $('#hidden_iframe').on('load', function(){
     if(application_submitted){
-        alert('Thanks we will get in touch very soon!');
+        alert('Thanks for applying, we will get in touch very soon!');
         $('#apply-modal').modal('hide');
     }
 });
 
 
 /* scrollTo navigation */
-
-$('nav a').on('click', function(event){
+var scrollable = function(event){
 	$.scrollTo($(this).attr('href'),600);
 	return false;
-});
+};
+
+$('.scrollTo').on('click', scrollable);
+
+$('.jumbotron a').on('click', scrollable);
