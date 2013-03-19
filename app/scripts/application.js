@@ -12,3 +12,11 @@ $('#hidden_iframe').on('load', function(){
         $('#apply-modal').modal('hide');
     }
 });
+
+
+/* scrollTo navigation */
+
+$('nav a').on('click', function(event){
+	$.scrollTo($(this).attr('href'),600);
+	return false;
+});
