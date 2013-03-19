@@ -1,5 +1,4 @@
 /* Code to handle application post to be redirected to google docs */
-$ = require('jquery');
 
 var application_submitted = false;
 
