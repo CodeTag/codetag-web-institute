@@ -22,8 +22,12 @@ header {
     height: 90px;
     line-height: 90px;
     width: 100%;
+    background-color: @white;
 }
 
+pre {
+    text-align: left;
+}
 nav {
     ul {
         li {
@@ -53,8 +57,11 @@ nav {
     text-align: center;
 }
 
-.main-content > div {
-    padding: 50px 0;
+.main-content {
+    margin-top: 90px;
+    & > div {
+        padding: 50px 0;
+    }
 }
 
 .nav-container {
@@ -73,13 +80,13 @@ nav {
 }
 
 #big-header-image {
-    height: 365px;
-    background: url('../images/main-image.jpg') no-repeat center center fixed;
+    height: 600px;
+    background: url('../images/background-django.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 190px;
+    padding-top: 140px;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -94,10 +101,16 @@ nav {
         line-height: 0.9;
         font-size: @huge;
         color: @white;
+        text-shadow: 2px 2px #000;
+    }
+    .title {
+        font-size: 120px;
+        color: @action-red;
+        font-family: @destroy;
     }
 
     .btn {
-        margin-top: 100px;
+        margin-top: 60px;
     }
 }
 
@@ -144,8 +157,13 @@ nav {
 .program {
     margin: 0 auto;
     text-align: center;
-    background-color: @action-blue;
+    background: @action-blue url('../images/silueta-program.png') no-repeat left top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: @white;
+
     .program-content{
         width: 940px;
         margin: 0 auto;
@@ -163,7 +181,8 @@ nav {
         padding: 20px 0px;
         h4 {
             font-size: @medium;
-            font-family: @light;
+            font-family: @tabitha;
+            font-weight: 100;
         }
         img {
             margin: 20px 25px;
@@ -202,8 +221,14 @@ nav {
     margin: 0 auto;
     text-align: center;
     background-color: @action-red;
+    background: @action-red url('../images/django-arms.png') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 10px 0px;
     color: @black;
+    height: 700px;
     h2 {
         padding: 0px;
         margin: 0 auto;
@@ -238,12 +263,21 @@ nav {
             margin-top: 30px;
         }
         h4 {
-            font-family: @light;
-            font-size: @small;
+            font-family: @tabitha;
+            font-size: @medium;
+            color: @action-red;
+            font-weight: 100;
+            margin-bottom: 10px;
         }
         p {
-            padding: 0;
+            padding: 20px 0;
         }
+    }
+}
+#questions {
+    .question {
+        margin: 0 auto;
+        float: none;
     }
 }
 #bootcamps {
