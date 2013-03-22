@@ -11,9 +11,7 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="styles/main.css">
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/vendor/modernizr.js"></script>
     </head>
     <body>
         <header class="border-box navbar-fixed-top">
@@ -50,7 +48,7 @@
             </div>
             <div class="more-info" id="more-info">
                 <h1>DEV CAMP</h1>
-                <p>A developer bootcamp is an intense program where you start from the web programming basics to build a portfolio of projects using technologies like Python-Django, HTML5, CSS3, Postgresql, Mongodb, Javascript among others.<br /><br />
+                <p>A developer bootcamp is an intense program where you start from the web programming basics to build a portfolio of projects using technologies like Python-Django, HTML5, CSS3, Postgresql, Mongodb, Javascript among others.<br><br>
                 This is a hands-on bootcamp that require a lot of effort and dedication, beyond technologies you will be introduced to computer science subjects and practices.
                 </p>
             </div>
@@ -127,7 +125,7 @@
                         <div class="thumbnail">
                             <div class="caption">
                                 <h3>DJANGO WEB DEVELOPER</h3>
-                                <H4>april 1st - june 30th</H4>
+                                <h4>april 1st - june 30th</h4>
                                 <p>Become a Django web developer in 12 weeks, get a portfolio done, and get introduced to companies looking for these skills</p>
                                 <a href="/register.html" class="btn btn-large btn-success">APPLY</a>
                             </div>
@@ -143,11 +141,11 @@
                 <button type="button" class="close" data-dismiss="modal">x</button>
                 <h3>APPLY TO THIS BOOTCAMP</h3>
             </div>
-            <form action="https://docs.google.com/forms/d/1riBBJLLQ48psfKxeaTYo0jJTAlx9Ls2r0xLnZQcpyKs/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="apply-form">
+            <form action="https://docs.google.com/forms/d/1riBBJLLQ48psfKxeaTYo0jJTAlx9Ls2r0xLnZQcpyKs/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true" id="apply-form">
                 <fieldset>
                     <div class="modal-body">
                         <input type="text" name="entry.821476572" id="entry_821476572" placeholder="Your full name">
-                        <input type="email"name="entry.948372883" id="entry_948372883"  placeholder="Your email">
+                        <input type="email" name="entry.948372883" id="entry_948372883" placeholder="Your email">
                         <input type="text" name="entry.1960038418" id="entry_1960038418" placeholder="Your phone number">
                     </div>
                     <div class="modal-footer">
@@ -172,8 +170,6 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 
-        <!-- build:js scripts/main.js -->
-        <script data-main="scripts/main" src="components/requirejs/require.js"></script>
-        <!-- endbuild -->
+        <script data-main="scripts/main" src="scripts/vendor/require.js"></script>
 </body>
 </html>
