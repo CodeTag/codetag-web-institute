@@ -2,4 +2,3 @@ node_modules
 .tmp
 app/components
 node_modules/
-dist
