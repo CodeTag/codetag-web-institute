@@ -24,17 +24,14 @@
                 <nav>
                     <ul class="nav nav-pills">
                         <li>
-                            <a href="/index.html#program" class="scrollTo">PROGRAM</a>
+                            <a href="#program" class="scrollTo">PROGRAMA</a>
                         </li>
                         <li>
-                            <a href="/index.html#companies" class="scrollTo">COMPANIES</a>
+                            <a href="#bootcamps" class="scrollTo">CAMPAMENTO</a>
                         </li>
                         <li>
-                            <a href="/index.html#bootcamps" class="scrollTo">BOOTCAMPS</a>
-                        </li>
-                        <li>
-                            <a href="#register">
-                                <b>JOIN</b>
+                            <a href="/register.html">
+                                <b>REGISTRO</b>
                             </a>
                         </li>
                     </ul>
@@ -44,33 +41,31 @@
         <hr>
         <div class="container">
             <div class="row-fluid companies">
-                <h2>PROCESS APPLICATION</h2>
-                <p> Explain how the application works.
-                 to apply you need to ask this 3 simple questions:
-                </p>
+                <h2>REGISTRO AL CAMPAMENTO</h2>
+                <h4>Requisitos y mas informaci&oacute;n del campamento</h4>
+                <ul class="unstyled">
+                    <li><p>Ser apasionado por el desarrollo web</p></li>
+                    <li><p>Disponibilidad 1era Semana -> 10 horas diarias presencial, 2da y 3ra Semanas 6 Horas Diarias Virtual y Hackathon de 48 Horas (viernes-domingo)</p></li>
+                    <li><p>Computador Personal con VirtualBox (instalar maquina virtual con <a href="http://www.ubuntu.com/download/desktop">Ubuntu</a>)*</p></li>
+                    <li><p>Durante la semana presencial incluye Almuerzo y dos refrigerios</p></li>
+                    <li><p>Durante la Hackathon esta incluido Cena, Almuerzo, Desayuno, Refrigerios,</p></li>
+                    <li><p>Conocimientos Basicos de desarrollo de software (condicionales, ciclos, tipos de datos, POO), no tienes que ser un experto desarrollador pero si luego un tiempo puedes entender que hace el siguiente c&oacute;digo, puedes sentirte c&oacute;modo para aplicar</p></li>
+                </ul>
+                <pre>
+                    fun naranjas(n:int) =
+
+                        let fun funcion_auxiliar(numero, acumulador) =
+
+                        if numero = 0 then acumulador else funcion_auxiliar(numero - 1, acumulador * numero)
+
+                        in
+
+                        funcion_auxiliar(n, 1)
+
+                    end;
+                </pre>
             </div>
-            <hr>
-            <div id="questions" class="row-fluid companies">
-                <h2>QUESTIONS</h2>
-                <div class="span6 question">
-                    <p>
-                        what does the following code?
-                    </p>
-                    <pre>a lot of code</pre>
-                </div>
-                <div class="span6 question">
-                    <p>
-                        what does the following code?
-                    </p>
-                    <pre>a lot of code</pre>
-                </div>
-                <div class="span6 question">
-                    <p>
-                        what does the following code?
-                    </p>
-                    <pre>a lot of code</pre>
-                </div>
-            </div>
+        
             <hr>
             <div class="row-fluid companies" id="register">
                 <h2>REGISTRO</h2>
@@ -78,17 +73,11 @@
                     <div style="width:100%; text-align:left;" >
                         <iframe  src="http://www.eventbrite.com/tickets-external?eid=6024231639&ref=etckt&v=2" frameborder="0" height="350" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
                         </iframe>
-                        <div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;">
-                            <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Venta de entradas online</a>
-                            <span style="color:#ddd;"> para </span>
-                            <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://django-codetag.eventbrite.com?ref=etckt">Django Bootcamp</a>
-                            <span style="color:#ddd;">ofrecido por</span>
-                            <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Codetag</a>
-                        </div>
                     </div>
                 </div>
             </div>
             <hr>
+            <p id="#notes">* Si ya tienes ubuntu en su ultima version(12.10) no necesitas de VirtualBox + Ubuntu,</p>
             <div class="footer"><a href="http://codetag.me">Codetag</a> 2013</div>
         </div>
         <iframe name="hidden_iframe" id="hidden_iframe"></iframe>
