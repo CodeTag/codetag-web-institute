@@ -6,118 +6,122 @@
 /**mixins**/
 .border-box {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-       -o-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
+.full-cover {
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+/**/
 
 body {
-    font-family: @regular;
+  font-family: @regular;
 }
 
 header {
-    position: relative;
-    padding: 20px 5px;
-    height: 90px;
-    line-height: 90px;
-    width: 100%;
-    background-color: @white;
+  position: relative;
+  padding: 20px 5px;
+  height: 90px;
+  line-height: 90px;
+  width: 100%;
+  background-color: @white;
 }
 
 pre {
-    text-align: left;
+  text-align: left;
 }
 nav {
-    ul {
-        li {
-            padding: 10px 15px;
-            font-size: @small;
-            border-left: 1px solid @gray;
-            color: @gray;
-            a {
-                padding: 1px;
-                color: @gray;
-                margin: 0 auto;
-            }
-            b {
-                font-family: @bold;
-                color: @darkgray;
-            }
-        }
-        li:first-child {
-            border: none;
-        }
+  ul {
+    li {
+      padding: 10px 15px;
+      font-size: @small;
+      border-left: 1px solid @gray;
+      color: @gray;
+      a {
+        padding: 1px;
+        color: @gray;
+        margin: 0 auto;
+      }
+      b {
+        font-family: @bold;
+        color: @darkgray;
+      }
     }
+    li:first-child {
+      border: none;
+    }
+  }
 }
 .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main-content {
-    margin-top: 90px;
-    & > div {
-        padding: 50px 0;
-    }
+  margin-top: 90px;
+  & > div {
+    padding: 50px 0;
+  }
 }
 
 .nav-container {
-    width: 940px;
+  width: 940px;
 }
 
 .logo {
-    a {
-        background: url('../images/codetag-logo-gris.png') 0 0 no-repeat;
-        height: 47px;
-        width: 200px;
-        color: transparent;
-        float: left;
-        padding: 2px 50px;
-    }
+  a {
+    background: url('../images/codetag-logo-gris.png') 0 0 no-repeat;
+    height: 47px;
+    width: 200px;
+    color: transparent;
+    float: left;
+    padding: 2px 50px;
+  }
 }
 
 #big-header-image {
-    height: 600px;
-    background: url('../images/background-django.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-top: 140px;
+  height: 600px;
+  background: url('../images/background-django.jpg') no-repeat center center fixed;
+  .full-cover;
+  padding-top: 140px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 1px;
+
+  h1 {
     text-align: center;
-    display: block;
     margin: 0 auto;
-    letter-spacing: 1px;
+    width: 940px;
+    font-family: 'Conv_ProximaNova-Extrabold';
+    padding: 10px;
+    line-height: 0.9;
+    font-size: @huge;
+    color: @white;
+    text-shadow: 2px 2px #000;
+  }
+  .title {
+    font-size: 120px;
+    color: @action-red;
+    font-family: @destroy;
+  }
 
-    h1 {
-        text-align: center;
-        margin: 0 auto;
-        width: 940px;
-        font-family: 'Conv_ProximaNova-Extrabold';
-        padding: 10px;
-        line-height: 0.9;
-        font-size: @huge;
-        color: @white;
-        text-shadow: 2px 2px #000;
-    }
-    .title {
-        font-size: 120px;
-        color: @action-red;
-        font-family: @destroy;
-    }
-
-    .btn {
-        margin-top: 60px;
-    }
+  .btn {
+    margin-top: 60px;
+  }
 }
 
 .btn-large {
-    font-family: @bold;
-    font-size: @medium-button;
-    letter-spacing: 1px;
+  font-family: @bold;
+  font-size: @medium-button;
+  letter-spacing: 1px;
 }
 
 .btn-success {
@@ -127,173 +131,144 @@ nav {
   width: 150px;
   line-height: 28px;
 }
-.more-info {
-    display: inline-block;
-    position: relative;
-    h1 {
-        color: @action-blue;
-        font-family: @bold;
-        font-size: @huge;
-        width: 210px;
-        padding: 0px;
-        margin-top: 0px;
-        margin-left: 80px;
-        line-height: 0.8;
-        text-align: right;
-        float: left;
-        padding-top: 30px;
-    }
-    p {
-        color: @black;
-        font-family: @light;
-        font-size: @small;
-        text-align: left;
-        float: right;
-        padding: 0px 25px;
-        width: 540px;
-    }
-}
 
-.program {
-    margin: 0 auto;
-    text-align: center;
-    background: @action-blue url('../images/silueta-program.png') no-repeat left top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: @white;
+section {
+  display: block;
+  position: relative;
+  padding: 70px 0;
+  margin: 0 auto;
+  text-align: left;
 
-    .program-content{
-        width: 940px;
-        margin: 0 auto;
-    }
-    h2 {
-        padding: 0;
-        font-family: @bold;
-        font-size: @medium;
-        line-height: 0.8;
-    }
-    .program-element {
-        font-family: @light;
-        font-size: @small;
-        text-align: left;
-        padding: 20px 0px;
-        h4 {
-            font-size: @medium;
-            font-family: @tabitha;
-            font-weight: 100;
-        }
-        img {
-            margin: 20px 25px;
-        }
-    }
-}
-
-.companies {
-    margin: 0 auto;
-    text-align: center;
-    color: @black;
+  .info-content{
     width: 940px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: @small;
+    font-family: @light;
+  
     h2 {
-        padding: 0;
-        font-family: @bold;
-        font-size: @medium;
-        line-height: 0.8;
-        color: @gray;
+      color: @action-blue;
+      font-family: @bold;
+      font-size: @huge;
+      padding: 0px;
+      line-height: 0.8;
+      text-align: right;
+      float: right;
+      text-transform: uppercase;
+      font-size: 36px;
+    }
+  
+    p {
+      float: left;
+    }
+    ul {
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.section-decorated(@background, @h2Color, @normalColor) {
+  background: @background;
+  .full-cover;
+  color: @normalColor;
+  h2 {
+    color: @h2Color;
+  }
+}
+
+#django {
+  .section-decorated(@white, #09432C, @black);
+}
+
+#dev-camp {
+  .section-decorated(@dark-blue, @white, @white);
+}
+
+#program {
+  .section-decorated(@white, @action-red, @black);
+}
+
+#content {
+  @siloute: #F2F2F2 url('../images/silueta-program.png') no-repeat right top fixed;
+  .section-decorated(@siloute, @gray, @black);
+}
+
+.bootcamps {
+  margin: 0 auto;
+  text-align: center;
+  background-color: @action-red;
+  background: @action-red url('../images/django-arms.png') no-repeat center top fixed;
+  .full-cover;
+  padding: 10px 0px;
+  color: @black;
+  height: 700px;
+  h2 {
+    padding: 0px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-family: @bold;
+    font-size: @medium;
+    color: @white;
+  }
+  img {
+    position: relative;
+    top: 50px;
+  }
+  .thumbnail {
+    border-radius: 20px;
+    border: 25px solid @gray;
+    padding: 20px;
+    background-color: @white;
+    p {
+      padding: 25px;
+      font-family: @light;
+      font-size: @small;
+    }
+  }
+  .caption {
+    color: @black;
+    h3 {
+      color: @gray;
+      color: @dark-blue;
+      font-size: @medium;
+      font-family: @bold;
+      line-height: 30px;
+      margin-top: 30px;
+    }
+    h4 {
+      font-family: @tabitha;
+      font-size: @medium;
+      color: @action-red;
+      font-weight: 100;
+      margin-bottom: 10px;
     }
     p {
-        font-family: @light;
-        font-size: @small;
+      padding: 20px 0;
     }
-    .logos {
-        padding: 20px 0px;
-    }
-    .thumbnails {
-        display: table;
-        li {
-            display: inline;
-            width: 90px;
-        }
-    }
-}
-.bootcamps {
-    margin: 0 auto;
-    text-align: center;
-    background-color: @action-red;
-    background: @action-red url('../images/django-arms.png') no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 10px 0px;
-    color: @black;
-    height: 700px;
-    h2 {
-        padding: 0px;
-        margin: 0 auto;
-        padding-top: 40px;
-        font-family: @bold;
-        font-size: @medium;
-        color: @white;
-    }
-    img {
-        position: relative;
-        top: 50px;
-    }
-    .thumbnail {
-        border-radius: 20px;
-        border: 25px solid @action-blue;
-        padding: 20px;
-        background-color: @white;
-        p {
-            padding: 25px;
-            font-family: @light;
-            font-size: @small;
-        }
-    }
-    .caption {
-        color: @black;
-        h3 {
-            color: @gray;
-            color: @action-blue;
-            font-size: @medium;
-            font-family: @bold;
-            line-height: 30px;
-            margin-top: 30px;
-        }
-        h4 {
-            font-family: @tabitha;
-            font-size: @medium;
-            color: @action-red;
-            font-weight: 100;
-            margin-bottom: 10px;
-        }
-        p {
-            padding: 20px 0;
-        }
-    }
+  }
 }
 #questions {
-    .question {
-        margin: 0 auto;
-        float: none;
-    }
+  .question {
+    margin: 0 auto;
+    float: none;
+  }
 }
 #bootcamps {
-    .course {
-        max-width: 420px;
-        width: 420px;
-        margin: 0 auto;
-        float: none
-    }
+  .course {
+    max-width: 420px;
+    width: 420px;
+    margin: 0 auto;
+    float: none
+  }
 }
 .modal-body {
-    input {
-        display: block;
-        width: 97%;
-    }
+  input {
+    display: block;
+    width: 97%;
+  }
 }
 #hidden_iframe {
-    display: none;
+  display: none;
 }
