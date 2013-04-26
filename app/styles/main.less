@@ -1,4 +1,5 @@
 @import 'bootstrap/less/bootstrap';
+@import 'bootstrap/less/responsive';
 
 @import '../styles/fonts';
 @import '../styles/variables';
@@ -21,13 +22,16 @@
 
 body {
   font-family: @regular;
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  body {
+    padding-top: 72px;
+  }
 }
 
 header {
   position: relative;
-  padding: 20px 5px;
-  height: 90px;
-  line-height: 90px;
   width: 100%;
   background-color: @white;
 }
@@ -57,7 +61,8 @@ nav {
     }
   }
 }
-.container {
+.container-fluid {
+  padding: 0;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -65,15 +70,12 @@ nav {
 }
 
 .main-content {
-  margin-top: 90px;
   & > div {
     padding: 50px 0;
   }
 }
 
-.nav-container {
-  width: 940px;
-}
+
 
 .logo {
   a {
@@ -99,7 +101,7 @@ nav {
   h1 {
     text-align: center;
     margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
     font-family: 'Conv_ProximaNova-Extrabold';
     padding: 10px;
     line-height: 0.9;
@@ -135,12 +137,12 @@ nav {
 section {
   display: block;
   position: relative;
-  padding: 70px 0;
+  padding: 70px 20px;
   margin: 0 auto;
   text-align: left;
 
   .info-content{
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     text-align: left;
     font-size: @small;
@@ -275,4 +277,72 @@ section {
 
 #register section {
   padding-top: 0px;
+}
+
+@media (max-width: 767px) {
+  .navbar-fixed-top {
+    margin: 0px;
+  }
+  section {
+    padding: 30px 20px;
+    .info-content {
+      h2 {
+        float: none;
+        text-align: left;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  #big-header-image {
+    height: auto;
+    padding: 30px;
+    h1 {
+      font-size: 30px;
+    }
+    .title {
+      font-size: 58px;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+  .bootcamps {
+    height: auto;
+    h2 {
+      padding-top: 40px;
+      font-size: 24px;
+    }
+    img {
+      display: none;
+    }
+    .thumbnail {
+      border-radius: 10px;
+      border: 15px solid @gray;
+      padding: 0;
+      p {
+        padding: 15px;
+        font-size: @small;
+      }
+    }
+    .caption {
+      h3 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 24px;
+      }
+      h4 {
+        font-size: @small;
+        margin-bottom: 10px;
+      }
+      p {
+        padding: 20px 0;
+      }
+    }
+  }
+  #bootcamps {
+    .course {
+      max-width: 280px;
+      width: 280px;
+    }
+  }
 }
